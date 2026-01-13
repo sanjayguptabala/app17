@@ -1,0 +1,193 @@
+1.Switch Statements
+
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+1.Main.java
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+2.Output / Print
+
+System.out.println("Hello World!");
+System.out.println("I am learning Java.");
+System.out.println("It is awesome!");
+System.out.println(2 * 5);
+
+3.Comments
+
+// This is a comment
+/* The code below will print the words Hello World
+to the screen, and it is amazing */
+
+4.Variables
+
+int myNum = 5;
+float myFloatNum = 5.99f;
+char myLetter = 'D';
+boolean myBool = true;
+String myText = "Hello";
+
+String firstName = "John ";
+String lastName = "Doe";
+String fullName = firstName + lastName;
+System.out.println(fullName);
+
+System.out.println(x + y + z); 
+
+final int myNum = 15;
+
+5.Data Types
+i)Primitive Data Types
+
+byte	Stores whole numbers from -128 to 127
+short	Stores whole numbers from -32,768 to 32,767
+int	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+long	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+double	Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits
+boolean	Stores true or false values
+char    Stores a single character/letter or ASCII values
+
+
+byte myNum = 100;
+short myNum = 5000;
+int myNum = 100000;
+long myNum = 15000000000L;
+float myNum = 5.75f;
+double myNum = 19.99d;
+
+boolean isJavaFun = true;
+boolean isFishTasty = false;
+System.out.println(isJavaFun);     
+System.out.println(isFishTasty);
+
+char myGrade = 'B';
+char myVar1 = 65, myVar2 = 66, myVar3 = 67;
+
+String greeting = "Hello World";
+
+ii)Non-Primitive Data Types
+
+Primitive types in Java are predefined and built into the language, while non-primitive types are created by the programmer (except for String).
+
+ Strings, Arrays, Classes 
+
+String greeting = "Hello World";
+
+6.var Keyword
+
+var x = 5;  // x is an int
+ar myDouble = 9.98;   // double
+var myChar = 'D';      // char
+var myBoolean = true;  // boolean
+var myString = "Hello";  //string
+
+7.Type Casting
+Widening Casting (automatic) - converting a smaller type to a larger type size
+
+byte -> short -> char -> int -> long -> float -> double
+
+int myInt = 9;
+double myDouble = myInt; // Automatic casting: int to double
+
+Narrowing Casting(manual) - converting a larger type to a smaller type size
+double -> float -> long -> int -> char -> short -> byte
+
+double myDouble = 9.78d;
+int myInt = (int) myDouble; // Manual casting: double to int
+
+8.Operators
+
+int x = 100 + 50;
+
+Arithmetic operators(+,-,*,/,%,++,--)++1,--1
+Assignment operators(=,+=,-=,*=,/=,%=,&=,|=,^=,>>=,<<=)
+Comparison operators(==,!=,>,<,>=,<=)
+Logical operators(&&,||,!)
+Bitwise operators
+
+Operator Precedence
+
+Order of Operations
+Here are some common operators, from highest to lowest priority:
+
+() - Parentheses
+*, /, % - Multiplication, Division, Modulus
++, - - Addition, Subtraction
+>, <, >=, <= - Comparison
+==, != - Equality
+&& - Logical AND
+|| - Logical OR
+= - Assignment
+
+9.Strings
+
+String greeting = "Hello";
+
+length() ,toUpperCase(),toLowerCase(),indexOf(),equals(),trim() ,charAt()
+
+
+String txt = "Please locate where 'locate' occurs!";
+System.out.println(txt.indexOf("locate"));   // Outputs 7
+
+String txt = "Hello World";
+System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
+System.out.println(txt.toLowerCase());   // Outputs "hello world"
+
+String txt = "ABCDEFGHZ";
+System.out.println(txt.length());
+
+String txt = "Hello";
+System.out.println(txt.charAt(0));  // H
+System.out.println(txt.charAt(4));  // o
+
+String txt1 = "Hello";
+String txt2 = "Hello";
+System.out.println(txt1.equals(txt2));   // true
+
+
+String txt = "   Hello World   ";
+System.out.println(txt.trim());     //[Hello World]
+
+Concatenation 
+
+System.out.println(firstName + " " + lastName);
+System.out.println("My name is " + name + " and I am " + age + " years old.");
+
+concat() Method
+
+String a = "Java ";
+String b = "is ";
+String c = "fun!";
+String result = a.concat(b).concat(c);
+System.out.println(result);
+
+Special Characters
+
+String txt = "It\\'s alright.";   //It\'s alright.
+
+\'	'	Single quote
+\"	"	Double quote
+\\	\	Backslash
+
+\n	New Line	
+\t	Tab	
+\b	Backspace	
+\r	Carriage Return	
+\f	Form Feed
+
+
+
