@@ -1,0 +1,223 @@
+10.Math
+
+Math.max(x,y)
+
+Math.max(5, 10);  //10
+
+Math.min(x,y)
+Math.sqrt(x)
+
+Math.abs(x)  
+Math.abs(-4.7);   //4.7
+
+Math.pow(x, y)  
+Math.pow(2, 8);  // 256.0
+
+Math.round(4.6);  // 5
+Math.ceil(4.1);   // 5.0
+Math.floor(4.9);  // 4.0
+
+Math.random();
+
+int randomNum = (int)(Math.random() * 101);  // 0 to 100 like 77
+
+
+11.Booleans
+
+boolean isJavaFun = true;
+boolean isFishTasty = false;
+System.out.println(isJavaFun);    // Outputs true
+System.out.println(isFishTasty);  // Outputs false
+
+int x = 10;
+int y = 9;
+System.out.println(x > y); // returns true, because 10 is greater than 9
+
+12. Conditions and
+If Statements
+
+boolean isRaining = true;
+
+if (isRaining) {
+  System.out.println("Bring an umbrella!");
+}
+
+The else Statement
+
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+
+else if Statement
+
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+
+
+Short Hand if...else
+
+variable = (condition) ? expressionTrue :  expressionFalse;
+String result = (time < 18) ? "Good day." : "Good evening."; 
+
+
+Nested If
+
+if (condition1) {
+  // code to run if condition1 is true
+  if (condition2) {
+    // code to run if both condition1 and condition2 are true
+  }
+}
+
+Logical Operators in Conditions
+
+&& (AND) - all conditions must be true
+|| (OR) - at least one condition must be true
+! (NOT) - reverses a condition (true = false, false = true)
+
+
+13.Switch Statemnets
+
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+int day = 4;
+switch (day) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  case 3:
+    System.out.println("Wednesday");
+    break;
+  case 4:
+    System.out.println("Thursday");
+    break;
+  case 5:
+    System.out.println("Friday");
+    break;
+  case 6:
+    System.out.println("Saturday");
+    break;
+  case 7:
+    System.out.println("Sunday");
+    break;
+}                                           // Outputs "Thursday" (day 4)
+
+
+14.While Loop
+
+int i = 0;
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}
+
+int countdown = 3;
+
+while (countdown > 0) {
+  System.out.println(countdown);
+  countdown--;
+}
+
+System.out.println("Happy New Year!!");     3 2 1 Happy New Year!! 
+
+
+15.Do/While Loop
+
+int i = 0;
+do {
+  System.out.println(i);
+  i++;
+}
+while (i < 5);
+
+16.for loop
+
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+
+
+17.Nested loop 
+
+public class Main{
+   public static void main (String[] args){
+       for(int i=1;i<=4;i++){
+         for(int j=1;j<=4;j++){
+            System.out.print(i*j+" ");
+         }
+         System.out.println();
+       }
+   }
+}                               //1 2 3 4 
+                                  2 4 6 8 
+                                  3 6 9 12 
+                                  4 8 12 16  
+
+
+18.for-each Loop
+
+for (type variableName : arrayName) {
+  // code block to be executed
+}
+
+
+
+int[] numbers = {10, 20, 30, 40};
+
+for (int num : numbers) {
+  System.out.println(num);
+}                                     //10
+                                        20
+                                        30
+                                        40
+
+
+
+
+19.break and continue (stop and skip)
+
+
+int[] numbers = {3, -1, 7, 0, 9};
+
+for (int n : numbers) {
+  if (n < 0) {
+    continue; // skip negative numbers
+  }
+  if (n == 0) {
+    break; // stop loop when zero is found
+  }
+  System.out.println(n);
+}
+
+
+int i = 0;
+while (i < 10) {
+  if (i == 4) {
+    i++;
+    continue;
+  }
+  System.out.println(i);
+  i++;
+}  
+
+
+
